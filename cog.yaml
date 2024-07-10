@@ -8,6 +8,8 @@ build:
   python_packages:
     - "git+https://github.com/coqui-ai/TTS.git"
   run:
+  # not sure this is the right approach but, were getting the requirements for japanese language on coqui-ai/TTS.git and pulling it so that we can install it
+    - wget https://raw.githubusercontent.com/coqui-ai/TTS/dbf1a08a0d4e47fdad6172e433eeb34bc6b13b4e/requirements.ja.txt -O requirements.ja.txt
     - pip install -r requirements.ja.txt
 
 predict: "predict.py:Predictor"
