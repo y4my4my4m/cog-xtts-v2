@@ -36,7 +36,7 @@ class Predictor(BasePredictor):
                 "ko",
                 "ja",
                 "hi"
-            ]
+            ],
             default="en"
         ),
         cleanup_voice: bool = Input(
